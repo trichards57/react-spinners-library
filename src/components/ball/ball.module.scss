@@ -1,0 +1,34 @@
+$width: 40px;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $width/2;
+}
+
+.ball {
+  @keyframes motion {
+    0% {
+      transform: translateX(0) scale(1);
+    }
+    25% {
+      transform: translateX($width/2) scale(0.25);
+    }
+    50% {
+      transform: translateX(0) scale(1);
+    }
+    75% {
+      transform: translateX(-$width / 2) scale(0.25);
+    }
+    100% {
+      transform: translateX(0) scale(1);
+    }
+  }
+
+  width: $width / 3;
+  height: $width / 3;
+  border-radius: 50%;
+  animation: motion 3s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
