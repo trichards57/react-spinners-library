@@ -1,6 +1,6 @@
-import React from "react";
-import SyntaxHighlighter from "react-syntax-highlighter/prism";
-import { atomOneDark } from "react-syntax-highlighter/styles/hljs";
+import React from 'react';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { atomOneDark } from 'react-syntax-highlighter/styles/hljs';
 import {
   SwapSpinner,
   BarsSpinner,
@@ -38,14 +38,14 @@ import {
   ClassicSpinner,
   WhisperSpinner,
   MetroSpinner
-} from "react-spinner-library";
+} from 'react-spinner-library';
 
 const SpinnerWrapper = ({ children, name }) => {
   return (
-    <div className="loader-item">
+    <div className='loader-item'>
       {children}
-      <div className="subcode">
-        <SyntaxHighlighter language="jsx" style={atomOneDark}>
+      <div className='subcode'>
+        <SyntaxHighlighter language='jsx' style={atomOneDark}>
           {`<${name} />`}
         </SyntaxHighlighter>
       </div>
@@ -56,128 +56,128 @@ const SpinnerWrapper = ({ children, name }) => {
 export default class App extends React.Component {
   render() {
     return (
-      <div className="outer">
-        <div className="header">
-          <h1 className="header-title">react-spinners-kit</h1>
-          <div className="header-subtitle">
+      <div className='outer'>
+        <div className='header'>
+          <h1 className='header-title'>react-spinners-kit</h1>
+          <div className='header-subtitle'>
             A collection of loading spinners built with styled-components.
           </div>
         </div>
         <a
-          href="https://github.com/dmitrymorozoff/react-spinners-kit"
-          className="button"
-          target="_blank"
-          rel="noopener noreferrer"
+          href='https://github.com/dmitrymorozoff/react-spinners-kit'
+          className='button'
+          target='_blank'
+          rel='noopener noreferrer'
         >
           github
         </a>
-        <div className="container">
-          <SpinnerWrapper name="BallSpinner">
+        <div className='container'>
+          <SpinnerWrapper name='BallSpinner'>
             <BallSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="SwapSpinner">
+          <SpinnerWrapper name='SwapSpinner'>
             <SwapSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="BarsSpinner">
+          <SpinnerWrapper name='BarsSpinner'>
             <BarsSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="ClapSpinner">
+          <SpinnerWrapper name='ClapSpinner'>
             <ClapSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="GridSpinner">
+          <SpinnerWrapper name='GridSpinner'>
             <GridSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="WaveSpinner">
+          <SpinnerWrapper name='WaveSpinner'>
             <WaveSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="PushSpinner">
+          <SpinnerWrapper name='PushSpinner'>
             <PushSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="FireworkSpinner">
+          <SpinnerWrapper name='FireworkSpinner'>
             <FireworkSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="StageSpinner">
+          <SpinnerWrapper name='StageSpinner'>
             <StageSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="RingSpinner">
+          <SpinnerWrapper name='RingSpinner'>
             <RingSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="HeartSpinner">
+          <SpinnerWrapper name='HeartSpinner'>
             <HeartSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="GuardSpinner">
+          <SpinnerWrapper name='GuardSpinner'>
             <GuardSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="CircleSpinner">
+          <SpinnerWrapper name='CircleSpinner'>
             <CircleSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="RotateSpinner">
+          <SpinnerWrapper name='RotateSpinner'>
             <RotateSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="SpiralSpinner">
+          <SpinnerWrapper name='SpiralSpinner'>
             <SpiralSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="PulseSpinner">
+          <SpinnerWrapper name='PulseSpinner'>
             <PulseSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="SwishSpinner">
+          <SpinnerWrapper name='SwishSpinner'>
             <SwishSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="SequenceSpinner">
+          <SpinnerWrapper name='SequenceSpinner'>
             <SequenceSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="ImpulseSpinner">
+          <SpinnerWrapper name='ImpulseSpinner'>
             <ImpulseSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="CubeSpinner">
+          <SpinnerWrapper name='CubeSpinner'>
             <CubeSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="MagicSpinner">
+          <SpinnerWrapper name='MagicSpinner'>
             <MagicSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="FlagSpinner">
+          <SpinnerWrapper name='FlagSpinner'>
             <FlagSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="FillSpinner">
+          <SpinnerWrapper name='FillSpinner'>
             <FillSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="SphereSpinner">
+          <SpinnerWrapper name='SphereSpinner'>
             <SphereSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="DominoSpinner">
+          <SpinnerWrapper name='DominoSpinner'>
             <DominoSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="GooSpinner">
+          <SpinnerWrapper name='GooSpinner'>
             <GooSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="CombSpinner">
+          <SpinnerWrapper name='CombSpinner'>
             <CombSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="PongSpinner">
+          <SpinnerWrapper name='PongSpinner'>
             <PongSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="RainbowSpinner">
+          <SpinnerWrapper name='RainbowSpinner'>
             <RainbowSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="HoopSpinner">
+          <SpinnerWrapper name='HoopSpinner'>
             <HoopSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="FlapperSpinner">
+          <SpinnerWrapper name='FlapperSpinner'>
             <FlapperSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="JellyfishSpinner">
+          <SpinnerWrapper name='JellyfishSpinner'>
             <JellyfishSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="TraceSpinner">
+          <SpinnerWrapper name='TraceSpinner'>
             <TraceSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="ClassicSpinner">
+          <SpinnerWrapper name='ClassicSpinner'>
             <ClassicSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="WhisperSpinner">
+          <SpinnerWrapper name='WhisperSpinner'>
             <WhisperSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name="MetroSpinner">
+          <SpinnerWrapper name='MetroSpinner'>
             <MetroSpinner />
           </SpinnerWrapper>
         </div>
