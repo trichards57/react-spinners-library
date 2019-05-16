@@ -55,8 +55,6 @@ const SpinnerWrapper = ({ children, name }) => {
 
 export default class App extends React.Component {
   render() {
-    const codeString = `npm install --save react-spinners-kit`;
-    const spinners = [CombSpinner].sort(() => Math.random() - 0.5);
     return (
       <div className="outer">
         <div className="header">
@@ -69,6 +67,7 @@ export default class App extends React.Component {
           href="https://github.com/dmitrymorozoff/react-spinners-kit"
           className="button"
           target="_blank"
+          rel="noopener noreferrer"
         >
           github
         </a>
