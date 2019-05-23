@@ -3,7 +3,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter/prism';
 import { atomOneDark } from 'react-syntax-highlighter/styles/hljs';
 import {
   // SwapSpinner,
-  // BarsSpinner,
+  BarsSpinner,
   BallSpinner
   // GridSpinner,
   // WaveSpinner,
@@ -77,11 +77,11 @@ export default class App extends React.Component {
           </SpinnerWrapper>
           {/* <SpinnerWrapper name='SwapSpinner'>
             <SwapSpinner />
-          </SpinnerWrapper>
+    </SpinnerWrapper> */}
           <SpinnerWrapper name='BarsSpinner'>
             <BarsSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name='ClapSpinner'>
+          {/*<SpinnerWrapper name='ClapSpinner'>
             <ClapSpinner />
           </SpinnerWrapper>
           <SpinnerWrapper name='GridSpinner'>
@@ -179,7 +179,8 @@ export default class App extends React.Component {
           </SpinnerWrapper>
           <SpinnerWrapper name='MetroSpinner'>
             <MetroSpinner />
-          </SpinnerWrapper> */}
+          </SpinnerWrapper>{' '}
+          */}
         </div>
       </div>
     );

@@ -1,7 +1,7 @@
 import { BallSpinner } from './components/ball';
 // import { GridSpinner } from './components/grid';
 // import { SwapSpinner } from './components/swap';
-// import { BarsSpinner } from './components/bars';
+import { BarsSpinner } from './components/bars';
 // import { WaveSpinner } from './components/wave';
 // import { PushSpinner } from './components/push';
 // import { FireworkSpinner } from './components/firework';
@@ -36,10 +36,10 @@ import { BallSpinner } from './components/ball';
 // import { MetroSpinner } from './components/metro';
 
 export {
-  BallSpinner
+  BallSpinner,
   // GridSpinner,
   // SwapSpinner,
-  // BarsSpinner,
+  BarsSpinner
   // WaveSpinner,
   // PushSpinner,
   // FireworkSpinner,

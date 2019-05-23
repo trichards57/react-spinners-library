@@ -1,18 +1,13 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import styles from './ball.module.scss';
-
-interface IBallSpinnerProps {
-  size: number;
-  color: string;
-  loading: boolean;
-}
+import { IComponentProps } from '../component-props';
 
 export const BallSpinner = ({
   size = 40,
   color = '#00ff89',
   loading = true
-}: IBallSpinnerProps) => {
+}: IComponentProps) => {
   return (
     loading && (
       <div

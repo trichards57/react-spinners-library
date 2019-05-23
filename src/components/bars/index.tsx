@@ -1,9 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './bars.module.scss';
+import { IComponentProps } from '../component-props';
 
-export const BarsSpinner = ({ size, color, loading }) => {
-  const countBars = 5;
+export const BarsSpinner = ({
+  size = 40,
+  color = '#00ff89',
+  loading = true
+}: IComponentProps) => {
   return (
     loading && (
       <div
