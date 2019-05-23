@@ -2,42 +2,42 @@ import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter/prism';
 import { atomOneDark } from 'react-syntax-highlighter/styles/hljs';
 import {
-  SwapSpinner,
-  BarsSpinner,
-  BallSpinner,
-  GridSpinner,
-  WaveSpinner,
-  PushSpinner,
-  FireworkSpinner,
-  StageSpinner,
-  HeartSpinner,
-  GuardSpinner,
-  CircleSpinner,
-  SpiralSpinner,
-  PulseSpinner,
-  SequenceSpinner,
-  DominoSpinner,
-  ImpulseSpinner,
-  CubeSpinner,
-  FillSpinner,
-  SphereSpinner,
-  FlagSpinner,
-  ClapSpinner,
-  RotateSpinner,
-  SwishSpinner,
-  GooSpinner,
-  CombSpinner,
-  PongSpinner,
-  RainbowSpinner,
-  RingSpinner,
-  HoopSpinner,
-  FlapperSpinner,
-  MagicSpinner,
-  JellyfishSpinner,
-  TraceSpinner,
-  ClassicSpinner,
-  WhisperSpinner,
-  MetroSpinner
+  // SwapSpinner,
+  // BarsSpinner,
+  BallSpinner
+  // GridSpinner,
+  // WaveSpinner,
+  // PushSpinner,
+  // FireworkSpinner,
+  // StageSpinner,
+  // HeartSpinner,
+  // GuardSpinner,
+  // CircleSpinner,
+  // SpiralSpinner,
+  // PulseSpinner,
+  // SequenceSpinner,
+  // DominoSpinner,
+  // ImpulseSpinner,
+  // CubeSpinner,
+  // FillSpinner,
+  // SphereSpinner,
+  // FlagSpinner,
+  // ClapSpinner,
+  // RotateSpinner,
+  // SwishSpinner,
+  // GooSpinner,
+  // CombSpinner,
+  // PongSpinner,
+  // RainbowSpinner,
+  // RingSpinner,
+  // HoopSpinner,
+  // FlapperSpinner,
+  // MagicSpinner,
+  // JellyfishSpinner,
+  // TraceSpinner,
+  // ClassicSpinner,
+  // WhisperSpinner,
+  // MetroSpinner
 } from 'react-spinner-library';
 
 const SpinnerWrapper = ({ children, name }) => {
@@ -75,7 +75,7 @@ export default class App extends React.Component {
           <SpinnerWrapper name='BallSpinner'>
             <BallSpinner />
           </SpinnerWrapper>
-          <SpinnerWrapper name='SwapSpinner'>
+          {/* <SpinnerWrapper name='SwapSpinner'>
             <SwapSpinner />
           </SpinnerWrapper>
           <SpinnerWrapper name='BarsSpinner'>
@@ -179,7 +179,7 @@ export default class App extends React.Component {
           </SpinnerWrapper>
           <SpinnerWrapper name='MetroSpinner'>
             <MetroSpinner />
-          </SpinnerWrapper>
+          </SpinnerWrapper> */}
         </div>
       </div>
     );
