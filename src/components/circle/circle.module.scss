@@ -1,0 +1,21 @@
+$width: 30px;
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $width;
+  border: $width/5 solid;
+  border-radius: 50%;
+  animation: rotate 0.75s linear infinite;
+}

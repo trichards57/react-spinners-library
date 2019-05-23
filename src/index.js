@@ -8,7 +8,7 @@ import { BarsSpinner } from './components/bars';
 // import { StageSpinner } from './components/stage';
 // import { HeartSpinner } from './components/heart';
 // import { GuardSpinner } from './components/guard';
-// import { CircleSpinner } from './components/circle';
+import { CircleSpinner } from './components/circle';
 // import { SpiralSpinner } from './components/spiral';
 // import { PulseSpinner } from './components/pulse';
 // import { SequenceSpinner } from './components/sequence';
@@ -39,14 +39,14 @@ export {
   BallSpinner,
   // GridSpinner,
   // SwapSpinner,
-  BarsSpinner
+  BarsSpinner,
   // WaveSpinner,
   // PushSpinner,
   // FireworkSpinner,
   // StageSpinner,
   // HeartSpinner,
   // GuardSpinner,
-  // CircleSpinner,
+  CircleSpinner
   // SpiralSpinner,
   // PulseSpinner,
   // SequenceSpinner,

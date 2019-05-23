@@ -4,7 +4,7 @@ import { atomOneDark } from 'react-syntax-highlighter/styles/hljs';
 import {
   // SwapSpinner,
   BarsSpinner,
-  BallSpinner
+  BallSpinner,
   // GridSpinner,
   // WaveSpinner,
   // PushSpinner,
@@ -12,7 +12,7 @@ import {
   // StageSpinner,
   // HeartSpinner,
   // GuardSpinner,
-  // CircleSpinner,
+  CircleSpinner,
   // SpiralSpinner,
   // PulseSpinner,
   // SequenceSpinner,
@@ -75,13 +75,16 @@ export default class App extends React.Component {
           <SpinnerWrapper name='BallSpinner'>
             <BallSpinner />
           </SpinnerWrapper>
-          {/* <SpinnerWrapper name='SwapSpinner'>
-            <SwapSpinner />
-    </SpinnerWrapper> */}
           <SpinnerWrapper name='BarsSpinner'>
             <BarsSpinner />
           </SpinnerWrapper>
-          {/*<SpinnerWrapper name='ClapSpinner'>
+          <SpinnerWrapper name='CircleSpinner'>
+            <CircleSpinner />
+          </SpinnerWrapper>
+          {/* <SpinnerWrapper name='SwapSpinner'>
+            <SwapSpinner />
+          </SpinnerWrapper> 
+          <SpinnerWrapper name='ClapSpinner'>
             <ClapSpinner />
           </SpinnerWrapper>
           <SpinnerWrapper name='GridSpinner'>
@@ -107,9 +110,6 @@ export default class App extends React.Component {
           </SpinnerWrapper>
           <SpinnerWrapper name='GuardSpinner'>
             <GuardSpinner />
-          </SpinnerWrapper>
-          <SpinnerWrapper name='CircleSpinner'>
-            <CircleSpinner />
           </SpinnerWrapper>
           <SpinnerWrapper name='RotateSpinner'>
             <RotateSpinner />
