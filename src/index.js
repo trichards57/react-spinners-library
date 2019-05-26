@@ -18,7 +18,7 @@ import { CircleSpinner } from './components/circle';
 // import { FillSpinner } from './components/fill';
 // import { SphereSpinner } from './components/sphere';
 // import { FlagSpinner } from './components/flag';
-// import { ClapSpinner } from './components/clap';
+import { ClapSpinner } from './components/clap';
 // import { RotateSpinner } from './components/rotate';
 // import { SwishSpinner } from './components/swish';
 // import { GooSpinner } from './components/goo';
@@ -46,7 +46,7 @@ export {
   // StageSpinner,
   // HeartSpinner,
   // GuardSpinner,
-  CircleSpinner
+  CircleSpinner,
   // SpiralSpinner,
   // PulseSpinner,
   // SequenceSpinner,
@@ -56,7 +56,7 @@ export {
   // FillSpinner,
   // SphereSpinner,
   // FlagSpinner,
-  // ClapSpinner,
+  ClapSpinner
   // RotateSpinner,
   // SwishSpinner,
   // GooSpinner,

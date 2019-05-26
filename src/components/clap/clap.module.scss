@@ -1,0 +1,63 @@
+@import '../math.scss';
+
+$size: 40px;
+$ballSize: $size/5;
+$ballCount: 7;
+$angle: 360deg / $ballCount;
+$radius: $size/2;
+$offset: $ballSize/2;
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.125);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@for $var from 0 through $ballCount {
+  $x: sin($angle * $var) * $radius - $offset;
+  $y: cos($angle * $var) * $radius - $offset;
+
+  @keyframes move-#{$var} {
+    0% {
+      transform: translateX($x) translateY($y) scale(1.25);
+    }
+    5% {
+      transform: translateX($x) translateY($y) scale(1.75);
+    }
+    50% {
+      transform: translateX($x) translateY($y) scale(0.25);
+    }
+    55% {
+      background-color: #4b4c56;
+      transform: translateX($x) translateY($y) scale(1);
+    }
+  }
+
+  .ball-#{$var} {
+    position: absolute;
+    top: $size/2;
+    left: $size/2;
+    width: $ballSize;
+    height: $ballSize;
+    border-radius: 50%;
+    transform: translateX($x) translateY($y);
+    animation: move-#{$var} 2.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+    animation-delay: $var * 0.2s;
+  }
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $size;
+  height: $size;
+  animation: rotate 1.5s linear infinite;
+}

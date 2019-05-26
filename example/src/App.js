@@ -22,7 +22,7 @@ import {
   // FillSpinner,
   // SphereSpinner,
   // FlagSpinner,
-  // ClapSpinner,
+  ClapSpinner
   // RotateSpinner,
   // SwishSpinner,
   // GooSpinner,
@@ -81,12 +81,12 @@ export default class App extends React.Component {
           <SpinnerWrapper name='CircleSpinner'>
             <CircleSpinner />
           </SpinnerWrapper>
-          {/* <SpinnerWrapper name='SwapSpinner'>
-            <SwapSpinner />
-          </SpinnerWrapper> 
           <SpinnerWrapper name='ClapSpinner'>
             <ClapSpinner />
           </SpinnerWrapper>
+          {/* <SpinnerWrapper name='SwapSpinner'>
+            <SwapSpinner />
+          </SpinnerWrapper> 
           <SpinnerWrapper name='GridSpinner'>
             <GridSpinner />
           </SpinnerWrapper>
