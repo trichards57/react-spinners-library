@@ -2,9 +2,12 @@ import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter/prism';
 import { atomOneDark } from 'react-syntax-highlighter/styles/hljs';
 import {
-  // SwapSpinner,
   BarsSpinner,
   BallSpinner,
+  CircleSpinner,
+  ClapSpinner,
+  ClassicSpinner
+  // SwapSpinner,
   // GridSpinner,
   // WaveSpinner,
   // PushSpinner,
@@ -12,7 +15,6 @@ import {
   // StageSpinner,
   // HeartSpinner,
   // GuardSpinner,
-  CircleSpinner,
   // SpiralSpinner,
   // PulseSpinner,
   // SequenceSpinner,
@@ -22,7 +24,6 @@ import {
   // FillSpinner,
   // SphereSpinner,
   // FlagSpinner,
-  ClapSpinner
   // RotateSpinner,
   // SwishSpinner,
   // GooSpinner,
@@ -35,7 +36,6 @@ import {
   // MagicSpinner,
   // JellyfishSpinner,
   // TraceSpinner,
-  // ClassicSpinner,
   // WhisperSpinner,
   // MetroSpinner
 } from 'react-spinner-library';
@@ -83,6 +83,9 @@ export default class App extends React.Component {
           </SpinnerWrapper>
           <SpinnerWrapper name='ClapSpinner'>
             <ClapSpinner />
+          </SpinnerWrapper>
+          <SpinnerWrapper name='ClassicSpinner'>
+            <ClassicSpinner />
           </SpinnerWrapper>
           {/* <SpinnerWrapper name='SwapSpinner'>
             <SwapSpinner />
@@ -170,9 +173,6 @@ export default class App extends React.Component {
           </SpinnerWrapper>
           <SpinnerWrapper name='TraceSpinner'>
             <TraceSpinner />
-          </SpinnerWrapper>
-          <SpinnerWrapper name='ClassicSpinner'>
-            <ClassicSpinner />
           </SpinnerWrapper>
           <SpinnerWrapper name='WhisperSpinner'>
             <WhisperSpinner />
