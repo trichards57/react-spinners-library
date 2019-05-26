@@ -24,12 +24,6 @@ export const BarsSpinner = ({
   );
 };
 
-BarsSpinner.defaultProps = {
-  loading: true,
-  size: 40,
-  color: '#00ff89'
-};
-
 BarsSpinner.propTypes = {
   loading: PropTypes.bool,
   size: PropTypes.number,

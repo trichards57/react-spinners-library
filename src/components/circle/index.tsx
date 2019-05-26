@@ -5,7 +5,7 @@ import styles from './circle.module.scss';
 
 export const CircleSpinner = ({
   size = 40,
-  color = '#fff',
+  color = '#00ff89',
   loading = true
 }: IComponentProps) => {
   return (
@@ -20,12 +20,6 @@ export const CircleSpinner = ({
       />
     )
   );
-};
-
-CircleSpinner.defaultProps = {
-  loading: true,
-  size: 40,
-  color: '#fff'
 };
 
 CircleSpinner.propTypes = {

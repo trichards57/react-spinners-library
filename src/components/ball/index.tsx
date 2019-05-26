@@ -20,12 +20,6 @@ export const BallSpinner = ({
   );
 };
 
-BallSpinner.defaultProps = {
-  loading: true,
-  size: 40,
-  color: '#00ff89'
-};
-
 BallSpinner.propTypes = {
   loading: PropTypes.bool,
   size: PropTypes.number,
