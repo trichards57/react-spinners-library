@@ -1,7 +1,6 @@
-import * as React from 'react';
-import * as PropTypes from 'prop-types';
+import React from 'react';
 import styles from './ball.module.scss';
-import { IComponentProps } from '../component-props';
+import { IComponentProps, standardProps } from '../component-props';
 
 export const BallSpinner = ({
   size = 40,
@@ -20,8 +19,4 @@ export const BallSpinner = ({
   );
 };
 
-BallSpinner.propTypes = {
-  loading: PropTypes.bool,
-  size: PropTypes.number,
-  color: PropTypes.string
-};
+BallSpinner.propTypes = standardProps;

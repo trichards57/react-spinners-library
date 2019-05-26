@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './bars.module.scss';
-import { IComponentProps } from '../component-props';
+import { IComponentProps, standardProps } from '../component-props';
 
 export const BarsSpinner = ({
   size = 40,
@@ -24,8 +23,4 @@ export const BarsSpinner = ({
   );
 };
 
-BarsSpinner.propTypes = {
-  loading: PropTypes.bool,
-  size: PropTypes.number,
-  color: PropTypes.string
-};
+BarsSpinner.propTypes = standardProps;

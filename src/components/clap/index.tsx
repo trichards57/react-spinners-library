@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './clap.module.scss';
-import { IComponentProps } from '../component-props';
+import { IComponentProps, standardProps } from '../component-props';
 
 export const ClapSpinner = ({
   size = 40,
@@ -26,8 +25,4 @@ export const ClapSpinner = ({
   );
 };
 
-ClapSpinner.propTypes = {
-  loading: PropTypes.bool,
-  size: PropTypes.number,
-  color: PropTypes.string
-};
+ClapSpinner.propTypes = standardProps;
