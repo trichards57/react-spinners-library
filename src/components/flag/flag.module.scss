@@ -1,51 +1,53 @@
 $size: 40px;
-$lineCount: 4;
+$line-count: 4;
 
 @keyframes wave {
   0% {
-    transform: translateY(0);
     opacity: 1;
+    transform: translateY(0);
   }
+
   50% {
-    transform: translateY($size/5);
     opacity: 0.25;
+    transform: translateY($size/5);
   }
+
   100% {
-    transform: translateY(0);
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: $size;
+  display: flex;
   height: $size;
+  justify-content: center;
+  position: relative;
+  width: $size;
 }
 
-@for $var from 0 through $lineCount {
+@for $var from 0 through $line-count {
   .line-#{$var} {
-    position: absolute;
-    left: 0;
-    top: 0;
     animation: wave 1.5s cubic-bezier(0.86, 0, 0.07, 1) infinite;
     animation-delay: $var * 0.2s;
+    left: 0;
+    position: absolute;
+    top: 0;
   }
 }
 
-@for $i from 0 through $lineCount {
-  @for $j from 0 through $lineCount {
-    $x: $i * ($size/6 + $size/9);
-    $y: $j * ($size/6 + $size/9) + $size/10;
+@for $i from 0 through $line-count {
+  @for $j from 0 through $line-count {
+    $x: $i * ($size / 6 + $size / 9);
+    $y: $j * ($size / 6 + $size / 9) + $size / 10;
 
     .plane-#{$i}-#{$j} {
+      height: $size / 6;
+      left: $x;
       position: absolute;
       top: $y;
-      left: $x;
-      width: $size/6;
-      height: $size/6;
+      width: $size / 6;
     }
   }
 }

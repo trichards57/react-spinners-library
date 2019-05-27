@@ -14,13 +14,13 @@ export interface ITwoColourProps {
 }
 
 export const componentProps = {
+  color: PropTypes.string,
   loading: PropTypes.bool,
-  size: PropTypes.number,
-  color: PropTypes.string
+  size: PropTypes.number
 };
 
 export const twoColorProps = {
+  color: PropTypes.string,
   loading: PropTypes.bool,
-  size: PropTypes.number,
-  color: PropTypes.string
+  size: PropTypes.number
 };

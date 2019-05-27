@@ -1,6 +1,6 @@
 import React from 'react';
+import { componentProps, IComponentProps } from '../component-props';
 import styles from './flag.module.scss';
-import { IComponentProps, componentProps } from '../component-props';
 
 export const FlagSpinner = ({
   size = 40,
@@ -13,29 +13,29 @@ export const FlagSpinner = ({
         className={styles.wrapper}
         style={{ transform: `scale(${size / 40})` }}
       >
-        <div className={styles['line-0']}>
-          <div className={styles['plane-0-0']} style={{ backgroundColor: color }} />
-          <div className={styles['plane-0-1']} style={{ backgroundColor: color }} />
-          <div className={styles['plane-0-2']} style={{ backgroundColor: color }} />
-          <div className={styles['plane-0-3']} style={{ backgroundColor: color }} />
+        <div className={styles.line0}>
+          <div className={styles.plane00} style={{ backgroundColor: color }} />
+          <div className={styles.plane01} style={{ backgroundColor: color }} />
+          <div className={styles.plane02} style={{ backgroundColor: color }} />
+          <div className={styles.plane03} style={{ backgroundColor: color }} />
         </div>
-        <div className={styles['line-1']}>
-          <div className={styles['plane-1-0']} style={{ backgroundColor: color }} />
-          <div className={styles['plane-1-1']} style={{ backgroundColor: color }} />
-          <div className={styles['plane-1-2']} style={{ backgroundColor: color }} />
-          <div className={styles['plane-1-3']} style={{ backgroundColor: color }} />
+        <div className={styles.line1}>
+          <div className={styles.plane10} style={{ backgroundColor: color }} />
+          <div className={styles.plane11} style={{ backgroundColor: color }} />
+          <div className={styles.plane12} style={{ backgroundColor: color }} />
+          <div className={styles.plane13} style={{ backgroundColor: color }} />
         </div>
-        <div className={styles['line-2']}>
-          <div className={styles['plane-2-0']} style={{ backgroundColor: color }} />
-          <div className={styles['plane-2-1']} style={{ backgroundColor: color }} />
-          <div className={styles['plane-2-2']} style={{ backgroundColor: color }} />
-          <div className={styles['plane-2-3']} style={{ backgroundColor: color }} />
+        <div className={styles.line2}>
+          <div className={styles.plane20} style={{ backgroundColor: color }} />
+          <div className={styles.plane21} style={{ backgroundColor: color }} />
+          <div className={styles.plane22} style={{ backgroundColor: color }} />
+          <div className={styles.plane23} style={{ backgroundColor: color }} />
         </div>
-        <div className={styles['line-3']}>
-          <div className={styles['plane-3-0']} style={{ backgroundColor: color }} />
-          <div className={styles['plane-3-1']} style={{ backgroundColor: color }} />
-          <div className={styles['plane-3-2']} style={{ backgroundColor: color }} />
-          <div className={styles['plane-3-3']} style={{ backgroundColor: color }} />
+        <div className={styles.line3}>
+          <div className={styles.plane30} style={{ backgroundColor: color }} />
+          <div className={styles.plane31} style={{ backgroundColor: color }} />
+          <div className={styles.plane32} style={{ backgroundColor: color }} />
+          <div className={styles.plane33} style={{ backgroundColor: color }} />
         </div>
       </div>
     )

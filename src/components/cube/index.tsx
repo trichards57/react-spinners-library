@@ -1,6 +1,6 @@
 import React from 'react';
+import { ITwoColourProps, twoColorProps } from '../component-props';
 import styles from './cube.module.scss';
-import { twoColorProps, ITwoColourProps } from '../component-props';
 
 export const CubeSpinner = ({
   size = 40,
@@ -26,19 +26,19 @@ export const CubeSpinner = ({
             />
             <div
               className={`${styles.side} ${styles.bottom}`}
-              style={{ backgroundColor: backgroundColor }}
+              style={{ backgroundColor }}
             />
             <div
               className={`${styles.side} ${styles.top}`}
-              style={{ backgroundColor: backgroundColor }}
+              style={{ backgroundColor }}
             />
             <div
               className={`${styles.side} ${styles.left}`}
-              style={{ backgroundColor: backgroundColor }}
+              style={{ backgroundColor }}
             />
             <div
               className={`${styles.side} ${styles.right}`}
-              style={{ backgroundColor: backgroundColor }}
+              style={{ backgroundColor }}
             />
           </div>
         </div>

@@ -4,65 +4,66 @@ $size: 40px;
   from {
     transform: rotateX(0) rotateY(0);
   }
+
   to {
     transform: rotatex(360deg) rotatey(360deg);
   }
 }
 
 .wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: $size;
+  display: flex;
   height: $size;
+  justify-content: center;
   perspective: $size * 4;
+  position: relative;
+  width: $size;
 }
 
-.cubeWrapper {
+.cube-wrapper {
+  height: inherit;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: inherit;
-  height: inherit;
 }
 
 .cube {
-  position: relative;
-  width: $size;
-  height: $size;
-  transform-style: preserve-3d;
   animation: rotate 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  height: $size;
+  position: relative;
+  transform-style: preserve-3d;
+  width: $size;
 }
 
 .side {
   backface-visibility: hidden;
   display: block;
+  height: inherit;
   position: absolute;
   width: inherit;
-  height: inherit;
-}
 
-.top {
-  transform: rotateX(90deg) rotateY(0) translateZ($size/2);
-}
+  .top {
+    transform: rotateX(90deg) rotateY(0) translateZ($size/2);
+  }
 
-.bottom {
-  transform: rotateX(-90deg) rotateY(0) translateZ($size/2);
-}
+  .bottom {
+    transform: rotateX(-90deg) rotateY(0) translateZ($size/2);
+  }
 
-.left {
-  transform: rotateX(0) rotateY(90deg) translateZ($size/2);
-}
+  .left {
+    transform: rotateX(0) rotateY(90deg) translateZ($size/2);
+  }
 
-.right {
-  transform: rotateX(0) rotateY(-90deg) translateZ($size/2);
-}
+  .right {
+    transform: rotateX(0) rotateY(-90deg) translateZ($size/2);
+  }
 
-.back {
-  transform: rotateX(0) rotateY(180deg) translateZ($size/2);
-}
+  .back {
+    transform: rotateX(0) rotateY(180deg) translateZ($size/2);
+  }
 
-.front {
-  transform: rotateX(0) rotateY(0) translateZ($size/2);
+  .front {
+    transform: rotateX(0) rotateY(0) translateZ($size/2);
+  }
 }

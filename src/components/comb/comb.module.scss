@@ -1,5 +1,5 @@
 $size: 40px;
-$barsCount: 11;
+$bars-count: 11;
 
 @keyframes rotate {
   to {
@@ -8,20 +8,20 @@ $barsCount: 11;
 }
 
 .wrapper {
+  height: $size / 5;
   position: relative;
   width: $size;
-  height: $size/5;
 }
 
-@for $var from 0 through $barsCount {
+@for $var from 0 through $bars-count {
   .bar-#{$var} {
-    position: absolute;
-    left: $var * 0.4 * 9px;
-    width: $size / (60 * 0.8);
-    height: $size/5;
-    transform-origin: center bottom;
-    transform: rotate(-90deg);
     animation: rotate 3s ease infinite;
     animation-delay: $var * 0.05s;
+    height: $size / 5;
+    left: $var * 0.4 * 9px;
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: center bottom;
+    width: $size / (60 * 0.8);
   }
 }

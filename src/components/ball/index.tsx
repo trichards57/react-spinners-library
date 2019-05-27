@@ -1,6 +1,6 @@
 import React from 'react';
+import { componentProps, IComponentProps } from '../component-props';
 import styles from './ball.module.scss';
-import { IComponentProps, componentProps } from '../component-props';
 
 export const BallSpinner = ({
   size = 40,

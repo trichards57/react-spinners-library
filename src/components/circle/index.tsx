@@ -1,5 +1,5 @@
 import React from 'react';
-import { IComponentProps, componentProps } from '../component-props';
+import { componentProps, IComponentProps } from '../component-props';
 import styles from './circle.module.scss';
 
 export const CircleSpinner = ({
@@ -12,9 +12,9 @@ export const CircleSpinner = ({
       <div
         className={styles.wrapper}
         style={{
-          transform: `scale(${size / 40})`,
           borderColor: color,
-          borderRightColor: 'transparent'
+          borderRightColor: 'transparent',
+          transform: `scale(${size / 40})`
         }}
       />
     )

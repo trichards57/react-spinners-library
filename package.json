@@ -19,7 +19,10 @@
     "start": "rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "sasslint": "sass-lint -v -q",
+    "tslint": "tslint --project ./tsconfig.json",
+    "tsm": "tsm src"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -63,6 +66,10 @@
     "rollup-plugin-sass-modules": "^1.4.0",
     "rollup-plugin-typescript2": "^0.17.0",
     "rollup-plugin-url": "^1.4.0",
+    "sass-lint": "^1.13.1",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typed-scss-modules": "^0.0.10",
     "typescript": "^3.3.0"
   },
   "files": [

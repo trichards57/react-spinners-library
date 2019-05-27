@@ -1,6 +1,6 @@
 import React from 'react';
+import { componentProps, IComponentProps } from '../component-props';
 import styles from './comb.module.scss';
-import { IComponentProps, componentProps } from '../component-props';
 
 export const CombSpinner = ({
   size = 100,
@@ -13,17 +13,17 @@ export const CombSpinner = ({
         className={styles.wrapper}
         style={{ transform: `scale(${size / 40})` }}
       >
-        <div className={styles['bar-0']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-1']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-2']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-3']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-4']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-5']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-6']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-7']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-8']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-9']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-10']} style={{ backgroundColor: color }} />
+        <div className={styles.bar0} style={{ backgroundColor: color }} />
+        <div className={styles.bar1} style={{ backgroundColor: color }} />
+        <div className={styles.bar2} style={{ backgroundColor: color }} />
+        <div className={styles.bar3} style={{ backgroundColor: color }} />
+        <div className={styles.bar4} style={{ backgroundColor: color }} />
+        <div className={styles.bar5} style={{ backgroundColor: color }} />
+        <div className={styles.bar6} style={{ backgroundColor: color }} />
+        <div className={styles.bar7} style={{ backgroundColor: color }} />
+        <div className={styles.bar8} style={{ backgroundColor: color }} />
+        <div className={styles.bar9} style={{ backgroundColor: color }} />
+        <div className={styles.bar10} style={{ backgroundColor: color }} />
       </div>
     )
   );

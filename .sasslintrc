@@ -1,0 +1,8 @@
+{
+  "files": {
+    "include": "src/**/*.s+(a|c)ss"
+  },
+  "rules": {
+    "leading-zero": [2, { "include": true }]
+  }
+}

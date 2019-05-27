@@ -1,6 +1,6 @@
 import React from 'react';
+import { componentProps, IComponentProps } from '../component-props';
 import styles from './firework.module.scss';
-import { IComponentProps, componentProps } from '../component-props';
 
 export const FireworkSpinner = ({
   size = 40,

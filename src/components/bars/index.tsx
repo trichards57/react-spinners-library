@@ -1,6 +1,6 @@
 import React from 'react';
+import { componentProps, IComponentProps } from '../component-props';
 import styles from './bars.module.scss';
-import { IComponentProps, componentProps } from '../component-props';
 
 export const BarsSpinner = ({
   size = 40,
@@ -13,11 +13,11 @@ export const BarsSpinner = ({
         className={styles.wrapper}
         style={{ transform: `scale(${size / 40})` }}
       >
-        <div className={styles['bar-0']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-1']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-2']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-3']} style={{ backgroundColor: color }} />
-        <div className={styles['bar-4']} style={{ backgroundColor: color }} />
+        <div className={styles.bar0} style={{ backgroundColor: color }} />
+        <div className={styles.bar1} style={{ backgroundColor: color }} />
+        <div className={styles.bar2} style={{ backgroundColor: color }} />
+        <div className={styles.bar3} style={{ backgroundColor: color }} />
+        <div className={styles.bar4} style={{ backgroundColor: color }} />
       </div>
     )
   );

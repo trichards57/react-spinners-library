@@ -1,35 +1,36 @@
 $size: 40px;
-$barsCount: 16;
+$bars-count: 16;
 
 @keyframes fade {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
 
 .wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: $size;
+  display: flex;
   height: $size;
+  justify-content: center;
+  position: relative;
+  width: $size;
 }
 
-@for $var from 0 through $barsCount {
-  $angle: 360deg * $var / $barsCount;
+@for $var from 0 to $bars-count {
+  $angle: 360deg * $var / $bars-count;
   $translate: -$size / 2;
 
   .bar-#{$var} {
-    position: absolute;
-    width: $size/10;
-    height: $size/4;
-    opacity: 0.05;
-    transform: rotate($angle) translate(0, $translate);
-    animation: fade ($barsCount * 0.06s) linear infinite;
+    animation: fade ($bars-count * 0.06s) linear infinite;
     animation-delay: $var * 0.06s;
+    height: $size / 4;
+    opacity: 0.05;
+    position: absolute;
+    transform: rotate($angle) translate(0, $translate);
+    width: $size / 10;
   }
 }
