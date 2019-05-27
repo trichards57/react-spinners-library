@@ -27,14 +27,23 @@ $line-count: 4;
   width: $size;
 }
 
+.line {
+  animation: wave 1.5s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
 @for $var from 0 through $line-count {
   .line-#{$var} {
-    animation: wave 1.5s cubic-bezier(0.86, 0, 0.07, 1) infinite;
     animation-delay: $var * 0.2s;
-    left: 0;
-    position: absolute;
-    top: 0;
   }
+}
+
+.plane {
+  height: $size / 6;
+  position: absolute;
+  width: $size / 6;
 }
 
 @for $i from 0 through $line-count {
@@ -43,11 +52,8 @@ $line-count: 4;
     $y: $j * ($size / 6 + $size / 9) + $size / 10;
 
     .plane-#{$i}-#{$j} {
-      height: $size / 6;
       left: $x;
-      position: absolute;
       top: $y;
-      width: $size / 6;
     }
   }
 }

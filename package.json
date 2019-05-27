@@ -34,6 +34,7 @@
     "@babel/core": "^7.0.0",
     "@babel/runtime": "^7.0.0",
     "@svgr/rollup": "^2.4.1",
+    "@types/classnames": "^2.2.7",
     "@types/prop-types": "^15.7.1",
     "@types/react": "^16.8.0",
     "@types/react-dom": "^16.8.0",
@@ -66,6 +67,7 @@
     "rollup-plugin-sass-modules": "^1.4.0",
     "rollup-plugin-typescript2": "^0.17.0",
     "rollup-plugin-url": "^1.4.0",
+    "rollup-plugin-visualizer": "^1.1.1",
     "sass-lint": "^1.13.1",
     "tslint": "^5.16.0",
     "tslint-config-prettier": "^1.18.0",
@@ -74,5 +76,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "classnames": "^2.2.6"
+  }
 }
