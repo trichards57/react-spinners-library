@@ -8,6 +8,7 @@ import { CubeSpinner } from './components/cube';
 // import { DominoSpinner } from './components/domino';
 import { FillSpinner } from './components/fill';
 import { FireworkSpinner } from './components/firework';
+import { FlagSpinner } from './components/flag';
 // import { GridSpinner } from './components/grid';
 // import { SwapSpinner } from './components/swap';
 // import { WaveSpinner } from './components/wave';
@@ -20,7 +21,6 @@ import { FireworkSpinner } from './components/firework';
 // import { SequenceSpinner } from './components/sequence';
 // import { ImpulseSpinner } from './components/impulse';
 // import { SphereSpinner } from './components/sphere';
-// import { FlagSpinner } from './components/flag';
 // import { RotateSpinner } from './components/rotate';
 // import { SwishSpinner } from './components/swish';
 // import { GooSpinner } from './components/goo';
@@ -45,7 +45,8 @@ export {
   CubeSpinner,
   // DominoSpinner,
   FillSpinner,
-  FireworkSpinner
+  FireworkSpinner,
+  FlagSpinner
   // GridSpinner,
   // SwapSpinner,
   // WaveSpinner,
@@ -58,7 +59,6 @@ export {
   // SequenceSpinner,
   // ImpulseSpinner,
   // SphereSpinner,
-  // FlagSpinner,
   // RotateSpinner,
   // SwishSpinner,
   // GooSpinner,

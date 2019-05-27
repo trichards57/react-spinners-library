@@ -11,7 +11,8 @@ import {
   CubeSpinner,
   // DominoSpinner,
   FillSpinner,
-  FireworkSpinner
+  FireworkSpinner,
+  FlagSpinner
   // SwapSpinner,
   // GridSpinner,
   // WaveSpinner,
@@ -24,7 +25,6 @@ import {
   // SequenceSpinner,
   // ImpulseSpinner,
   // SphereSpinner,
-  // FlagSpinner,
   // RotateSpinner,
   // SwishSpinner,
   // GooSpinner,
@@ -103,6 +103,9 @@ export default class App extends React.Component {
           <SpinnerWrapper name='FireworkSpinner'>
             <FireworkSpinner />
           </SpinnerWrapper>
+          <SpinnerWrapper name='FlagSpinner'>
+            <FlagSpinner />
+          </SpinnerWrapper>
           {/* 
           <SpinnerWrapper name='SwapSpinner'>
             <SwapSpinner />
@@ -148,9 +151,6 @@ export default class App extends React.Component {
           </SpinnerWrapper>
           <SpinnerWrapper name='MagicSpinner'>
             <MagicSpinner />
-          </SpinnerWrapper>
-          <SpinnerWrapper name='FlagSpinner'>
-            <FlagSpinner />
           </SpinnerWrapper>
           <SpinnerWrapper name='SphereSpinner'>
             <SphereSpinner />
