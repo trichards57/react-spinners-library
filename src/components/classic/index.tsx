@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './classic.module.scss';
-import { IComponentProps, standardProps } from '../component-props';
+import { IComponentProps, componentProps } from '../component-props';
 
 export const ClassicSpinner = ({
   size = 40,
@@ -34,4 +34,4 @@ export const ClassicSpinner = ({
   );
 };
 
-ClassicSpinner.propTypes = standardProps;
+ClassicSpinner.propTypes = componentProps;

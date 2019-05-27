@@ -4,6 +4,7 @@ import { CircleSpinner } from './components/circle';
 import { ClapSpinner } from './components/clap';
 import { ClassicSpinner } from './components/classic';
 import { CombSpinner } from './components/comb';
+import { CubeSpinner } from './components/cube';
 // import { GridSpinner } from './components/grid';
 // import { SwapSpinner } from './components/swap';
 // import { WaveSpinner } from './components/wave';
@@ -17,7 +18,6 @@ import { CombSpinner } from './components/comb';
 // import { SequenceSpinner } from './components/sequence';
 // import { DominoSpinner } from './components/domino';
 // import { ImpulseSpinner } from './components/impulse';
-// import { CubeSpinner } from './components/cube';
 // import { FillSpinner } from './components/fill';
 // import { SphereSpinner } from './components/sphere';
 // import { FlagSpinner } from './components/flag';
@@ -41,7 +41,8 @@ export {
   CircleSpinner,
   ClapSpinner,
   ClassicSpinner,
-  CombSpinner
+  CombSpinner,
+  CubeSpinner
   // GridSpinner,
   // SwapSpinner,
   // WaveSpinner,
@@ -55,7 +56,6 @@ export {
   // SequenceSpinner,
   // DominoSpinner,
   // ImpulseSpinner,
-  // CubeSpinner,
   // FillSpinner,
   // SphereSpinner,
   // FlagSpinner,

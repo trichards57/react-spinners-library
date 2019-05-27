@@ -1,5 +1,5 @@
 import React from 'react';
-import { IComponentProps, standardProps } from '../component-props';
+import { IComponentProps, componentProps } from '../component-props';
 import styles from './circle.module.scss';
 
 export const CircleSpinner = ({
@@ -21,4 +21,4 @@ export const CircleSpinner = ({
   );
 };
 
-CircleSpinner.propTypes = standardProps;
+CircleSpinner.propTypes = componentProps;

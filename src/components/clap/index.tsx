@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './clap.module.scss';
-import { IComponentProps, standardProps } from '../component-props';
+import { IComponentProps, componentProps } from '../component-props';
 
 export const ClapSpinner = ({
   size = 40,
@@ -25,4 +25,4 @@ export const ClapSpinner = ({
   );
 };
 
-ClapSpinner.propTypes = standardProps;
+ClapSpinner.propTypes = componentProps;

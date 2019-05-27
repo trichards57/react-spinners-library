@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './comb.module.scss';
-import { IComponentProps, standardProps } from '../component-props';
+import { IComponentProps, componentProps } from '../component-props';
 
 export const CombSpinner = ({
   size = 100,
@@ -29,4 +29,4 @@ export const CombSpinner = ({
   );
 };
 
-CombSpinner.propTypes = standardProps;
+CombSpinner.propTypes = componentProps;

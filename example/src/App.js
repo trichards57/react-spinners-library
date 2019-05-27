@@ -7,7 +7,8 @@ import {
   CircleSpinner,
   ClapSpinner,
   ClassicSpinner,
-  CombSpinner
+  CombSpinner,
+  CubeSpinner
   // SwapSpinner,
   // GridSpinner,
   // WaveSpinner,
@@ -21,7 +22,6 @@ import {
   // SequenceSpinner,
   // DominoSpinner,
   // ImpulseSpinner,
-  // CubeSpinner,
   // FillSpinner,
   // SphereSpinner,
   // FlagSpinner,
@@ -90,6 +90,9 @@ export default class App extends React.Component {
           <SpinnerWrapper name='CombSpinner'>
             <CombSpinner />
           </SpinnerWrapper>
+          <SpinnerWrapper name='CubeSpinner'>
+            <CubeSpinner />
+          </SpinnerWrapper>
           {/* <SpinnerWrapper name='SwapSpinner'>
             <SwapSpinner />
           </SpinnerWrapper> 
@@ -134,9 +137,6 @@ export default class App extends React.Component {
           </SpinnerWrapper>
           <SpinnerWrapper name='ImpulseSpinner'>
             <ImpulseSpinner />
-          </SpinnerWrapper>
-          <SpinnerWrapper name='CubeSpinner'>
-            <CubeSpinner />
           </SpinnerWrapper>
           <SpinnerWrapper name='MagicSpinner'>
             <MagicSpinner />

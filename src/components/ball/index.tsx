@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ball.module.scss';
-import { IComponentProps, standardProps } from '../component-props';
+import { IComponentProps, componentProps } from '../component-props';
 
 export const BallSpinner = ({
   size = 40,
@@ -19,4 +19,4 @@ export const BallSpinner = ({
   );
 };
 
-BallSpinner.propTypes = standardProps;
+BallSpinner.propTypes = componentProps;
