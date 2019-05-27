@@ -4,7 +4,7 @@ import { IComponentProps, componentProps } from '../component-props';
 
 export const FillSpinner = ({
   size = 20,
-  color = '#4b4c56',
+  color = '#00ff89',
   loading = true
 }: IComponentProps) => {
   return (
