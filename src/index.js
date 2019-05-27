@@ -7,11 +7,11 @@ import { CombSpinner } from './components/comb';
 import { CubeSpinner } from './components/cube';
 // import { DominoSpinner } from './components/domino';
 import { FillSpinner } from './components/fill';
+import { FireworkSpinner } from './components/firework';
 // import { GridSpinner } from './components/grid';
 // import { SwapSpinner } from './components/swap';
 // import { WaveSpinner } from './components/wave';
 // import { PushSpinner } from './components/push';
-// import { FireworkSpinner } from './components/firework';
 // import { StageSpinner } from './components/stage';
 // import { HeartSpinner } from './components/heart';
 // import { GuardSpinner } from './components/guard';
@@ -44,12 +44,12 @@ export {
   CombSpinner,
   CubeSpinner,
   // DominoSpinner,
-  FillSpinner
+  FillSpinner,
+  FireworkSpinner
   // GridSpinner,
   // SwapSpinner,
   // WaveSpinner,
   // PushSpinner,
-  // FireworkSpinner,
   // StageSpinner,
   // HeartSpinner,
   // GuardSpinner,
