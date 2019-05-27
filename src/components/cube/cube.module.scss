@@ -42,28 +42,28 @@ $size: 40px;
   height: inherit;
   position: absolute;
   width: inherit;
+}
 
-  .top {
-    transform: rotateX(90deg) rotateY(0) translateZ($size/2);
-  }
+.top {
+  transform: rotateX(90deg) rotateY(0) translateZ($size/2);
+}
 
-  .bottom {
-    transform: rotateX(-90deg) rotateY(0) translateZ($size/2);
-  }
+.bottom {
+  transform: rotateX(-90deg) rotateY(0) translateZ($size/2);
+}
 
-  .left {
-    transform: rotateX(0) rotateY(90deg) translateZ($size/2);
-  }
+.left {
+  transform: rotateX(0) rotateY(90deg) translateZ($size/2);
+}
 
-  .right {
-    transform: rotateX(0) rotateY(-90deg) translateZ($size/2);
-  }
+.right {
+  transform: rotateX(0) rotateY(-90deg) translateZ($size/2);
+}
 
-  .back {
-    transform: rotateX(0) rotateY(180deg) translateZ($size/2);
-  }
+.back {
+  transform: rotateX(0) rotateY(180deg) translateZ($size/2);
+}
 
-  .front {
-    transform: rotateX(0) rotateY(0) translateZ($size/2);
-  }
+.front {
+  transform: rotateX(0) rotateY(0) translateZ($size/2);
 }
