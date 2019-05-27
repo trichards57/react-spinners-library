@@ -1,0 +1,44 @@
+@import '../math';
+
+$size: 40px;
+$ball-size: $size / 1.5;
+$ball-count: 7;
+$radius: $size / 2;
+$offset: $ball-size / 2;
+$angle: 360deg / $ball-count;
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  height: $size;
+  justify-content: center;
+  position: relative;
+  width: $size;
+}
+
+.ball {
+  border-radius: 50%;
+  height: $ball-size;
+  left: $size / 2;
+  position: absolute;
+  top: $size / 2;
+  width: $ball-size;
+}
+
+@for $var from 0 to $ball-count {
+  $x: sin($angle * $var) * $radius - $offset;
+  $y: cos($angle * $var) * $radius - $offset;
+
+  @keyframes move-#{$var} {
+    100% {
+      opacity: 0;
+      transform: translateX($x) translateY($y) scale(1);
+    }
+  }
+
+  .ball-#{$var} {
+    animation: move-#{$var} 0.8s linear infinite;
+    animation-delay: $var * 0.1s;
+    transform: translateX($x) translateY($y) scale(0);
+  }
+}
