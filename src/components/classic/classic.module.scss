@@ -20,17 +20,20 @@ $bars-count: 16;
   width: $size;
 }
 
+.bar {
+  animation: fade ($bars-count * 0.06s) linear infinite;
+  height: $size / 4;
+  opacity: 0.05;
+  position: absolute;
+  width: $size / 10;
+}
+
 @for $var from 0 to $bars-count {
   $angle: 360deg * $var / $bars-count;
   $translate: -$size / 2;
 
   .bar-#{$var} {
-    animation: fade ($bars-count * 0.06s) linear infinite;
     animation-delay: $var * 0.06s;
-    height: $size / 4;
-    opacity: 0.05;
-    position: absolute;
     transform: rotate($angle) translate(0, $translate);
-    width: $size / 10;
   }
 }
