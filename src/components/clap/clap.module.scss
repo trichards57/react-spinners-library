@@ -22,6 +22,15 @@ $background-color: #4b4c56;
   }
 }
 
+.ball {
+  border-radius: 50%;
+  height: $ball-size;
+  left: $size / 2;
+  position: absolute;
+  top: $size / 2;
+  width: $ball-size;
+}
+
 @for $var from 0 to $ball-count {
   $x: sin($angle * $var) * $radius - $offset;
   $y: cos($angle * $var) * $radius - $offset;
@@ -48,13 +57,7 @@ $background-color: #4b4c56;
   .ball-#{$var} {
     animation: move-#{$var} 2.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
     animation-delay: $var * 0.2s;
-    border-radius: 50%;
-    height: $ball-size;
-    left: $size / 2;
-    position: absolute;
-    top: $size / 2;
     transform: translateX($x) translateY($y);
-    width: $ball-size;
   }
 }
 

@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 import { componentProps, IComponentProps } from '../component-props';
 import styles from './clap.module.scss';
@@ -13,13 +14,13 @@ export const ClapSpinner = ({
         className={styles.wrapper}
         style={{ transform: `scale(${size / 40})` }}
       >
-        <div className={styles.ball0} style={{ backgroundColor: color }} />
-        <div className={styles.ball1} style={{ backgroundColor: color }} />
-        <div className={styles.ball2} style={{ backgroundColor: color }} />
-        <div className={styles.ball3} style={{ backgroundColor: color }} />
-        <div className={styles.ball4} style={{ backgroundColor: color }} />
-        <div className={styles.ball5} style={{ backgroundColor: color }} />
-        <div className={styles.ball6} style={{ backgroundColor: color }} />
+        <div className={classNames(styles["ball-0"], styles.ball)} style={{ backgroundColor: color }} />
+        <div className={classNames(styles["ball-1"], styles.ball)} style={{ backgroundColor: color }} />
+        <div className={classNames(styles["ball-2"], styles.ball)} style={{ backgroundColor: color }} />
+        <div className={classNames(styles["ball-3"], styles.ball)} style={{ backgroundColor: color }} />
+        <div className={classNames(styles["ball-4"], styles.ball)} style={{ backgroundColor: color }} />
+        <div className={classNames(styles["ball-5"], styles.ball)} style={{ backgroundColor: color }} />
+        <div className={classNames(styles["ball-6"], styles.ball)} style={{ backgroundColor: color }} />
       </div>
     )
   );
